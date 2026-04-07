@@ -6,25 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RIM Records - Taste Beyond Expectations</title>
 
-    <!-- Output css file -->
     <link href="./src/output.css" rel="stylesheet">
-
-    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-
-    <!-- Fontawesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
-
-    <!-- AOS cdn -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="./src/assets/images/logo.png">
-
 </head>
 
 <body class="overflow-x-hidden">
-    <!-- Header  -->
+
+    <!-- Header -->
     <header class="header fixed top-0 left-0 w-[100%] py-4 px-[2rem] md:px-[4rem] lg:px-[6rem] bg-none z-10">
         <div class="header-container flex justify-between items-center">
             <div class="header-left">
@@ -35,12 +28,12 @@
                 <!-- Desktop Navbar -->
                 <nav class="navbar hidden md:block">
                     <ul class="navlist flex items-center gap-6">
-                        <li class="navitem"><a href="#home" class="navlink text-white active hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500 ease-in-out">Home</a></li>
-                        <li class="navitem"><a href="#videos" class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500 ease-in-out">Videos</a></li>
-                        <li class="navitem"><a href="#services" class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500 ease-in-out">Services</a></li>
-                        <li class="navitem"><a href="#reservation" class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500 ease-in-out">Studio Booking</a></li>
-                        <li class="navitem"><a href="#about" class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500 ease-in-out">About</a></li>
-                        <li class="navitem"><a href="#contact" class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500 ease-in-out">Contact</a></li>
+                        <li><a href="#home" class="navlink text-white active hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500">Home</a></li>
+                        <li><a href="#videos" class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500">Videos</a></li>
+                        <li><a href="#services" class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500">Services</a></li>
+                        <li><a href="#reservation" class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500">Studio Booking</a></li>
+                        <li><a href="#about" class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500">About</a></li>
+                        <li><a href="#contact" class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500">Contact</a></li>
                     </ul>
                 </nav>
 
@@ -48,12 +41,12 @@
                 <nav class="mobile-menu md:hidden fixed top-0 right-[-100%] w-[100%] sm:w-[50%] h-[100%] px-4 py-12 bg-white z-20 shadow-lg overflow-hidden transition-all duration-500 ease-in-out">
                     <span class="close absolute top-2 right-0 text-3xl text-red-500 cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
                     <ul class="navlist flex flex-col items-start gap-6">
-                        <li class="navitem"><a href="#home" class="navlink text-[#222] active hover:text-yellow-500 text-xl font-normal capitalize transition-all duration-500 ease-in-out">Home</a></li>
-                        <li class="navitem"><a href="#about" class="navlink text-[#222] hover:text-yellow-500 text-xl font-normal capitalize transition-all duration-500 ease-in-out">About</a></li>
-                        <li class="navitem"><a href="#videos" class="navlink text-[#222] hover:text-yellow-500 text-xl font-normal capitalize transition-all duration-500 ease-in-out">Videos</a></li>
-                        <li class="navitem"><a href="#services" class="navlink text-[#222] hover:text-yellow-500 text-xl font-normal capitalize transition-all duration-500 ease-in-out">Services</a></li>
-                        <li class="navitem"><a href="#reservation" class="navlink text-[#222] hover:text-yellow-500 text-xl font-normal capitalize transition-all duration-500 ease-in-out">Studio Booking</a></li>
-                        <li class="navitem"><a href="#contact" class="navlink text-[#222] hover:text-yellow-500 text-xl font-normal capitalize transition-all duration-500 ease-in-out">Contact</a></li>
+                        <li><a href="#home" class="navlink text-[#222] active hover:text-yellow-500 text-xl font-normal capitalize">Home</a></li>
+                        <li><a href="#about" class="navlink text-[#222] hover:text-yellow-500 text-xl font-normal capitalize">About</a></li>
+                        <li><a href="#videos" class="navlink text-[#222] hover:text-yellow-500 text-xl font-normal capitalize">Videos</a></li>
+                        <li><a href="#services" class="navlink text-[#222] hover:text-yellow-500 text-xl font-normal capitalize">Services</a></li>
+                        <li><a href="#reservation" class="navlink text-[#222] hover:text-yellow-500 text-xl font-normal capitalize">Studio Booking</a></li>
+                        <li><a href="#contact" class="navlink text-[#222] hover:text-yellow-500 text-xl font-normal capitalize">Contact</a></li>
                     </ul>
                 </nav>
 
@@ -64,7 +57,7 @@
         </div>
     </header>
 
-    <!-- Home Section -->
+    <!-- Hero -->
     <main>
         <section class="section hero section-padding w-full h-screen bg-[#f9f9f9] flex flex-col justify-center items-center" id="home">
             <div class="hero-content text-center w-full max-w-md sm:max-w-xl lg:max-w-2xl mx-auto" data-aos="fade-up">
@@ -75,14 +68,13 @@
         </section>
     </main>
 
-    <!-- Music Videos -->
+    <!-- Music Videos Section -->
     <section class="section menu section-padding bg-[var(--lightPink)]" id="videos">
         <div class="section-title" data-aos="fade-up">
             <h2 class="section-heading">Our Videos</h2>
-            <p class="section-description">Explore our most loved music videos and visuals, crafted with passion in Nairobi.</p>
+            <p class="section-description">Handpicked visuals and music videos produced with passion at RIM Records, Nairobi.</p>
         </div>
 
-        <!-- Tab btns -->
         <div class="tab-btns flex flex-wrap items-center justify-center gap-6 mb-16" data-aos="fade-up">
             <button class="btn tab-btn px-5 py-3 bg-gray-200/50 rounded-full active hover:bg-yellow-500 transition" data-category="all">All</button>
             <button class="btn tab-btn px-5 py-3 bg-gray-200/50 rounded-full hover:bg-yellow-500 transition" data-category="breakfast">Reggae / Rhumba</button>
@@ -90,73 +82,65 @@
             <button class="btn tab-btn px-5 py-3 bg-gray-200/50 rounded-full hover:bg-yellow-500 transition" data-category="dinner">Gengetone / Urban</button>
         </div>
 
-        <!-- Tab content: menu grid -->
         <div class="menu-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-center" data-aos="fade-up">
-            
+
+            <!-- 1 -->
             <div class="menu-card bg-white rounded-xl shadow-lg overflow-hidden group transition" data-category="breakfast">
                 <iframe width="100%" src="https://www.youtube.com/embed/oxfmvQoMA-U"></iframe>
                 <div class="p-6">
-                    <div class="flex justify-between items-center mb-1">
-                        <h3 class="text-xl font-semibold capitalize">Rick Mutune - Parte Teaser</h3>
-                    </div>
+                    <h3 class="text-xl font-semibold capitalize">Rick Mutune - Parte Teaser</h3>
                     <p class="text-sm text-red-400 uppercase mb-2">Teaser</p>
-                    <p class="text-gray-600 font-normal">It's time to Parte! 🔥 Rick Mutune drops heat with his latest single - A fresh fusion of rhythm, soul, and energy. Get a glimpse of the vibe in this exclusive teaser.</p>
+                    <p class="text-gray-600 font-normal">High-energy streets anthem ready to shake the dancefloor. A fusion of reggae and contemporary Kenyan sound.</p>
                 </div>
             </div>
 
-            <div class="menu-card bg-white rounded-xl shadow-lg overflow-hidden group transition" data-category="breakfast">
+            <!-- 2 -->
+            <div class="menu-card bg-white rounded-xl shadow-lg overflow-hidden group transition" data-category="lunch">
                 <iframe width="100%" src="https://www.youtube.com/embed/Me09EfZfdd8"></iframe>
                 <div class="p-6">
-                    <div class="flex justify-between items-center mb-1">
-                        <h3 class="text-xl font-semibold capitalize">Lily Musicke - Thank You Lord (Visualizer)</h3>
-                    </div>
+                    <h3 class="text-xl font-semibold capitalize">Lily Musicke - Thank You Lord</h3>
                     <p class="text-sm text-yellow-400 uppercase mb-2">Visualizer</p>
-                    <p class="text-gray-600 font-normal">Simple! Thank you Lord for Absolutely Everything. The Gift of Life, Good Health, This Talent and everything to Come.</p>
+                    <p class="text-gray-600 font-normal">A soulful expression of gratitude. Minimal yet powerful visuals that let the message shine through.</p>
                 </div>
             </div>
 
+            <!-- 3 -->
             <div class="menu-card bg-white rounded-xl shadow-lg overflow-hidden group transition" data-category="dinner">
                 <iframe width="100%" src="https://www.youtube.com/embed/sIs76eZ3Kno"></iframe>
                 <div class="p-6">
-                    <div class="flex justify-between items-center mb-1">
-                        <h3 class="text-xl font-semibold capitalize">Gicho - If I Perish I Perish</h3>
-                    </div>
+                    <h3 class="text-xl font-semibold capitalize">Gicho - If I Perish I Perish</h3>
                     <p class="text-sm text-yellow-400 uppercase mb-2">Official Video</p>
-                    <p class="text-gray-600 font-normal">Urban Rhumba Party Anthem!!! Life is short, party hard, spend freely, and bring your friends along!</p>
+                    <p class="text-gray-600 font-normal">The ultimate urban rhumba party anthem. Live fast, celebrate harder — pure Nairobi energy.</p>
                 </div>
             </div>
 
+            <!-- 4 -->
             <div class="menu-card bg-white rounded-xl shadow-lg overflow-hidden group transition" data-category="breakfast">
                 <iframe width="100%" src="https://www.youtube.com/embed/GVmbql0-n0M"></iframe>
                 <div class="p-6">
-                    <div class="flex justify-between items-center mb-1">
-                        <h3 class="text-xl font-semibold capitalize">Gicho - Capital City</h3>
-                    </div>
+                    <h3 class="text-xl font-semibold capitalize">Gicho - Capital City</h3>
                     <p class="text-sm text-red-400 uppercase mb-2">Teaser</p>
-                    <p class="text-gray-600 font-normal">Welcome to the streets of Nairobi, where dreams, hustle, and raw talent collide. "Capital City" is the debut single by Gicho under RIM Records.</p>
+                    <p class="text-gray-600 font-normal">Raw hustle meets melody. Nairobi streets telling their own story through music.</p>
                 </div>
             </div>
 
-
-            <div class="menu-card bg-white rounded-xl shadow-lg overflow-hidden group transition" data-category="breakfast">
-                <iframe width="100%" src="https://www.youtube.com/embed/GVmbql0-n0M"></iframe>
+            <!-- 5 - New Artist -->
+            <div class="menu-card bg-white rounded-xl shadow-lg overflow-hidden group transition" data-category="lunch">
+                <img src="src/assets/images/menu5.jpg" alt="New Release" class="w-full h-60 object-cover group-hover:scale-105 transition duration-500">
                 <div class="p-6">
-                    <div class="flex justify-between items-center mb-1">
-                        <h3 class="text-xl font-semibold capitalize">Gicho - Capital City</h3>
-                    </div>
-                    <p class="text-sm text-red-400 uppercase mb-2">Teaser</p>
-                    <p class="text-gray-600 font-normal">Welcome to the streets of Nairobi, where dreams, hustle, and raw talent collide. "Capital City" is the debut single by Gicho under RIM Records.</p>
+                    <h3 class="text-xl font-semibold capitalize">Nia Soul - Midnight Confessions</h3>
+                    <p class="text-sm text-yellow-400 uppercase mb-2">Official Video</p>
+                    <p class="text-gray-600 font-normal">Smooth RnB vibes with deep emotional lyrics. Perfect late-night listening experience.</p>
                 </div>
             </div>
 
-            <div class="menu-card bg-white rounded-xl shadow-lg overflow-hidden group transition" data-category="breakfast">
-                <iframe width="100%" src="https://www.youtube.com/embed/GVmbql0-n0M"></iframe>
+            <!-- 6 - New Artist -->
+            <div class="menu-card bg-white rounded-xl shadow-lg overflow-hidden group transition" data-category="dinner">
+                <img src="src/assets/images/menu6.jpg" alt="New Release" class="w-full h-60 object-cover group-hover:scale-105 transition duration-500">
                 <div class="p-6">
-                    <div class="flex justify-between items-center mb-1">
-                        <h3 class="text-xl font-semibold capitalize">Gicho - Capital City</h3>
-                    </div>
-                    <p class="text-sm text-red-400 uppercase mb-2">Teaser</p>
-                    <p class="text-gray-600 font-normal">Welcome to the streets of Nairobi, where dreams, hustle, and raw talent collide. "Capital City" is the debut single by Gicho under RIM Records.</p>
+                    <h3 class="text-xl font-semibold capitalize">Kush Vibes - Fire In The Booth</h3>
+                    <p class="text-sm text-red-400 uppercase mb-2">Live Session</p>
+                    <p class="text-gray-600 font-normal">Gengetone meets conscious lyrics. Raw energy captured in one fiery studio performance.</p>
                 </div>
             </div>
         </div>
@@ -166,47 +150,48 @@
     <section class="section chefs-picks section-padding" id="chefs-picks">
         <div class="w-full lg:w-[60%] mx-auto text-center mb-16" data-aos="fade-up">
             <h2 class="text-4xl md:text-5xl font-semibold capitalize mb-4">Latest Hot Releases</h2>
-            <p class="text-lg font-normal text-gray-500">Fresh tracks and visuals straight from the RIM Records studio.</p>
+            <p class="text-lg font-normal text-gray-500">Fresh heat straight from the RIM Records studio.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 justify-center" data-aos="fade-up">
-            <div class="card w-full h-auto xl:h-60 flex flex-col xl:flex-row gap-0 xl:gap-5" data-aos="zoom-in" data-aos-delay="100">
+
+            <div class="card w-full h-auto xl:h-60 flex flex-col xl:flex-row gap-0 xl:gap-5" data-aos="zoom-in">
                 <iframe src="https://www.youtube.com/embed/oxfmvQoMA-U"></iframe>
                 <div class="bg-white shadow-lg rounded-lg py-4 px-3 flex flex-col justify-center">
-                    <p class="text-sm text-red-400 uppercase mb-2 tracking-widest">Reggae / Dancehall</p>
-                    <h3 class="text-xl font-bold mb-2">Rick Mutune - Parte</h3>
-                    <p class="text-gray-500 mb-4 font-normal">The streets are calling. High energy fusion ready to move the crowd.</p>
-                    <a href="#" class="btn text-base font-medium hover:text-yellow-500 transition">Watch Full Video <i class="fas fa-arrow-right"></i></a>
+                    <p class="text-sm text-red-400 uppercase mb-2 tracking-widest">Reggae Fusion</p>
+                    <h3 class="text-xl font-bold mb-2">Rick Mutune – Parte</h3>
+                    <p class="text-gray-500 mb-4">Street energy meets premium production. Already turning up clubs across East Africa.</p>
+                    <a href="#" class="btn text-base font-medium hover:text-yellow-500 transition">Watch Now <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
 
             <div class="card w-full h-auto xl:h-60 flex flex-col xl:flex-row gap-0 xl:gap-5" data-aos="zoom-in" data-aos-delay="100">
-                <iframe src="https://www.youtube.com/embed/oxfmvQoMA-U"></iframe>
+                <img src="src/assets/images/special2.jpg" alt="Studio" class="w-full xl:w-60 h-60 object-cover rounded-xl shadow-lg mb-4">
                 <div class="bg-white shadow-lg rounded-lg py-4 px-3 flex flex-col justify-center">
-                    <p class="text-sm text-red-400 uppercase mb-2 tracking-widest">Reggae / Dancehall</p>
-                    <h3 class="text-xl font-bold mb-2">Rick Mutune - Parte</h3>
-                    <p class="text-gray-500 mb-4 font-normal">The streets are calling. High energy fusion ready to move the crowd.</p>
+                    <p class="text-sm text-yellow-400 uppercase mb-2 tracking-widest">Soul / RnB</p>
+                    <h3 class="text-xl font-bold mb-2">Lily Musicke – Thank You Lord</h3>
+                    <p class="text-gray-500 mb-4">Heartfelt gratitude wrapped in beautiful melody and clean visuals.</p>
+                    <a href="#" class="btn text-base font-medium hover:text-yellow-500 transition">Stream Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="card w-full h-auto xl:h-60 flex flex-col xl:flex-row gap-0 xl:gap-5" data-aos="zoom-in" data-aos-delay="200">
+                <img src="src/assets/images/special3.jpg" alt="Studio" class="w-full xl:w-60 h-60 object-cover rounded-xl shadow-lg mb-4">
+                <div class="bg-white shadow-lg rounded-lg py-4 px-3 flex flex-col justify-center">
+                    <p class="text-sm text-red-400 uppercase mb-2 tracking-widest">Urban Rhumba</p>
+                    <h3 class="text-xl font-bold mb-2">Gicho – If I Perish I Perish</h3>
+                    <p class="text-gray-500 mb-4">The party anthem of the season. Bold, fun, and unapologetically Kenyan.</p>
                     <a href="#" class="btn text-base font-medium hover:text-yellow-500 transition">Watch Full Video <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
 
-            <div class="card w-full h-auto xl:h-60 flex flex-col xl:flex-row gap-0 xl:gap-5" data-aos="zoom-in" data-aos-delay="100">
-                <iframe src="https://www.youtube.com/embed/oxfmvQoMA-U"></iframe>
+            <div class="card w-full h-auto xl:h-60 flex flex-col xl:flex-row gap-0 xl:gap-5" data-aos="zoom-in" data-aos-delay="300">
+                <img src="src/assets/images/special4.jpg" alt="Studio" class="w-full xl:w-60 h-60 object-cover rounded-xl shadow-lg mb-4">
                 <div class="bg-white shadow-lg rounded-lg py-4 px-3 flex flex-col justify-center">
-                    <p class="text-sm text-red-400 uppercase mb-2 tracking-widest">Reggae / Dancehall</p>
-                    <h3 class="text-xl font-bold mb-2">Rick Mutune - Parte</h3>
-                    <p class="text-gray-500 mb-4 font-normal">The streets are calling. High energy fusion ready to move the crowd.</p>
-                    <a href="#" class="btn text-base font-medium hover:text-yellow-500 transition">Watch Full Video <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="card w-full h-auto xl:h-60 flex flex-col xl:flex-row gap-0 xl:gap-5" data-aos="zoom-in" data-aos-delay="100">
-                <iframe src="https://www.youtube.com/embed/oxfmvQoMA-U"></iframe>
-                <div class="bg-white shadow-lg rounded-lg py-4 px-3 flex flex-col justify-center">
-                    <p class="text-sm text-red-400 uppercase mb-2 tracking-widest">Reggae / Dancehall</p>
-                    <h3 class="text-xl font-bold mb-2">Rick Mutune - Parte</h3>
-                    <p class="text-gray-500 mb-4 font-normal">The streets are calling. High energy fusion ready to move the crowd.</p>
-                    <a href="#" class="btn text-base font-medium hover:text-yellow-500 transition">Watch Full Video <i class="fas fa-arrow-right"></i></a>
+                    <p class="text-sm text-yellow-400 uppercase mb-2 tracking-widest">Gengetone</p>
+                    <h3 class="text-xl font-bold mb-2">Kush Vibes – Fire In The Booth</h3>
+                    <p class="text-gray-500 mb-4">Conscious bars over hard-hitting beats. One take, pure fire.</p>
+                    <a href="#" class="btn text-base font-medium hover:text-yellow-500 transition">Listen Now <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -215,25 +200,21 @@
     <!-- About Section -->
     <section class="section about section-padding bg-[#fff7f0] overflow-x-hidden" id="about">
         <div class="about-content grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            <!-- Left Side : image -->
             <div class="w-full h-full hidden sm:block" data-aos="fade-right">
                 <img src="src/assets/images/special1.jpg" alt="RIM Records Studio" class="w-full h-full object-cover rounded-xl shadow-xl">
             </div>
 
-            <!-- Right Side : text -->
             <div class="w-full lg:max-w-2xl mx-auto" data-aos="fade-left">
                 <small class="inline-block text-sm uppercase tracking-widest text-yellow-500 mb-3">Our Story</small>
                 <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-800 capitalize leading-[1.1]">Where Sound Becomes Legacy</h2>
-                <p class="text-gray-600 text-lg mb-6">At <span class="font-semibold text-black capitalize">RIM Records</span>, we don't just record music — we sculpt sound. Based in Nairobi, we blend traditional Kenyan energy with modern production techniques to help artists tell their stories and reach the world.</p>
-
-                <p class="text-gray-600 text-lg mb-6">From reggae and rhumba to RnB, Gengetone, and beyond — every session is crafted with passion, precision, and purpose.</p>
-
+                <p class="text-gray-600 text-lg mb-6">At <span class="font-semibold text-black">RIM Records</span>, we sculpt sound into timeless art. Based in Nairobi, we fuse authentic Kenyan rhythms with world-class production to help artists create music that travels far beyond borders.</p>
+                <p class="text-gray-600 text-lg mb-6">Whether it's reggae roots, soulful RnB, high-energy Gengetone or smooth rhumba — every project is treated with passion, precision, and purpose.</p>
                 <a href="#videos" class="btn primary-btn">Explore Our Work</a>
             </div>
         </div>
     </section>
 
-    <!-- Services Section (Music Production Services) -->
+    <!-- Services -->
     <section class="section services section-padding" id="services">
         <div class="section-title" data-aos="fade-up">
             <h2 class="section-heading">Our Services</h2>
@@ -243,213 +224,191 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-center" data-aos="fade-up">
             <div class="card bg-[var(--lightPink)] p-8 rounded-xl shadow-md hover:shadow-xl transition duration-500">
                 <div class="text-yellow-500 text-4xl mb-4"><i class="fa-solid fa-microphone"></i></div>
-                <h3 class="text-xl font-semibold mb-2 capitalize">Recording Sessions</h3>
-                <p class="text-gray-600 font-normal text-lg">State-of-the-art studio with top-tier microphones and acoustic treatment for vocals and live instruments.</p>
+                <h3 class="text-xl font-semibold mb-2">Recording Sessions</h3>
+                <p class="text-gray-600 font-normal text-lg">Premium studio equipped with top-tier gear for vocals, live instruments, and full band recordings.</p>
             </div>
-
             <div class="card bg-[var(--lightPink)] p-8 rounded-xl shadow-md hover:shadow-xl transition duration-500">
                 <div class="text-yellow-500 text-4xl mb-4"><i class="fa-solid fa-sliders"></i></div>
-                <h3 class="text-xl font-semibold mb-2 capitalize">Mixing & Mastering</h3>
-                <p class="text-gray-600 font-normal text-lg">Radio-ready mixes and loud, clean masters that compete globally.</p>
+                <h3 class="text-xl font-semibold mb-2">Mixing & Mastering</h3>
+                <p class="text-gray-600 font-normal text-lg">Clean, loud, and radio-ready tracks that stand out on every platform.</p>
             </div>
-
             <div class="card bg-[var(--lightPink)] p-8 rounded-xl shadow-md hover:shadow-xl transition duration-500">
                 <div class="text-yellow-500 text-4xl mb-4"><i class="fa-solid fa-music"></i></div>
-                <h3 class="text-xl font-semibold mb-2 capitalize">Beat Production</h3>
-                <p class="text-gray-600 font-normal text-lg">Custom beats across genres — Reggae, RnB, Gengetone, Rhumba, Trap, and more.</p>
+                <h3 class="text-xl font-semibold mb-2">Beat Production</h3>
+                <p class="text-gray-600 font-normal text-lg">Original beats tailored for Reggae, RnB, Gengetone, Rhumba, Trap, and more.</p>
             </div>
-
             <div class="card bg-[var(--lightPink)] p-8 rounded-xl shadow-md hover:shadow-xl transition duration-500">
                 <div class="text-yellow-500 text-4xl mb-4"><i class="fa-solid fa-video"></i></div>
-                <h3 class="text-xl font-semibold mb-2 capitalize">Music Video Production</h3>
-                <p class="text-gray-600 font-normal text-lg">Concept development, shooting, and editing for official videos and visualizers.</p>
+                <h3 class="text-xl font-semibold mb-2">Music Video Production</h3>
+                <p class="text-gray-600 font-normal text-lg">Full video concepts, shooting, and professional editing for official releases.</p>
             </div>
-
             <div class="card bg-[var(--lightPink)] p-8 rounded-xl shadow-md hover:shadow-xl transition duration-500">
                 <div class="text-yellow-500 text-4xl mb-4"><i class="fa-solid fa-users"></i></div>
-                <h3 class="text-xl font-semibold mb-2 capitalize">Artist Development</h3>
-                <p class="text-gray-600 font-normal text-lg">Vocal coaching, songwriting support, image guidance, and career strategy.</p>
+                <h3 class="text-xl font-semibold mb-2">Artist Development</h3>
+                <p class="text-gray-600 font-normal text-lg">Vocal training, songwriting sessions, branding, and long-term career guidance.</p>
             </div>
-
             <div class="card bg-[var(--lightPink)] p-8 rounded-xl shadow-md hover:shadow-xl transition duration-500">
                 <div class="text-yellow-500 text-4xl mb-4"><i class="fa-solid fa-headphones"></i></div>
-                <h3 class="text-xl font-semibold mb-2 capitalize">Sound Engineering</h3>
-                <p class="text-gray-600 font-normal text-lg">Live sound, podcast recording, jingles, and commercial audio production.</p>
+                <h3 class="text-xl font-semibold mb-2">Sound Engineering</h3>
+                <p class="text-gray-600 font-normal text-lg">Live sound, jingles, podcasts, and commercial audio projects.</p>
             </div>
         </div>
     </section>
 
-    <!-- Studio Booking / Reservation -->
+    <!-- Studio Booking -->
     <section class="section reservation section-padding bg-[#fff]" id="reservation">
         <div class="section-title" data-aos="fade-up">
             <h2 class="section-heading">Book Studio Time</h2>
-            <p class="section-description">Reserve your session at RIM Records. Let's create something timeless.</p>
+            <p class="section-description">Reserve your session at RIM Records. Let's create something timeless together.</p>
         </div>
 
         <div class="w-full md:max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-md" data-aos="fade-up">
-            <form action="" class="reservation_form grid grid-cols-1 md:grid-cols-2 gap-6" id="reservation_form">
-                <!-- Same form fields as before, just updated labels where needed -->
+            <form class="reservation_form grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                    <label for="reservation_name" class="block mb-2 text-sm font-medium text-gray-700 capitalize">Full Name:</label>
-                    <input type="text" name="reservation_name" id="reservation_name" class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="Your Name" required>
+                    <label class="block mb-2 text-sm font-medium text-gray-700">Full Name</label>
+                    <input type="text" class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="Your Name" required>
                 </div>
                 <div>
-                    <label for="reservation_email" class="block mb-2 text-sm font-medium text-gray-700 capitalize">Email:</label>
-                    <input type="email" name="reservation_email" id="reservation_email" class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="you@gmail.com" required>
+                    <label class="block mb-2 text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="you@gmail.com" required>
                 </div>
                 <div>
-                    <label for="reservation_phone" class="block mb-2 text-sm font-medium text-gray-700 capitalize">Phone Number:</label>
-                    <input type="tel" name="reservation_phone" id="reservation_phone" class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="+254712345678" required>
+                    <label class="block mb-2 text-sm font-medium text-gray-700">Phone Number</label>
+                    <input type="tel" class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="+254 712 345 678" required>
                 </div>
                 <div>
-                    <label for="reservation_date" class="block mb-2 text-sm font-medium text-gray-700 capitalize">Preferred Date:</label>
-                    <input type="date" name="reservation_date" id="reservation_date" class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" required>
+                    <label class="block mb-2 text-sm font-medium text-gray-700">Preferred Date</label>
+                    <input type="date" class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" required>
                 </div>
                 <div>
-                    <label for="reservation_time" class="block mb-2 text-sm font-medium text-gray-700 capitalize">Preferred Time:</label>
-                    <input type="time" name="reservation_time" id="reservation_time" class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" required>
+                    <label class="block mb-2 text-sm font-medium text-gray-700">Preferred Time</label>
+                    <input type="time" class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" required>
                 </div>
                 <div>
-                    <label for="reservation_guests" class="block mb-2 text-sm font-medium text-gray-700 capitalize">Number of Artists:</label>
-                    <input type="number" min="1" max="10" name="reservation_guests" id="reservation_guests" class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="1" required>
+                    <label class="block mb-2 text-sm font-medium text-gray-700">Number of Artists</label>
+                    <input type="number" min="1" max="10" class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="1" required>
                 </div>
                 <div class="md:col-span-2">
-                    <label for="reservation_message" class="block mb-2 text-sm font-medium text-gray-700 capitalize">Session Details:</label>
-                    <textarea name="reservation_message" id="reservation_message" class="w-full h-40 border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="What kind of session? (Recording, Mixing, Beat Production, etc.)"></textarea>
+                    <label class="block mb-2 text-sm font-medium text-gray-700">Session Details</label>
+                    <textarea class="w-full h-40 border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="Recording, Mixing, Beat Production, Video Shoot, etc."></textarea>
                 </div>
                 <div class="md:col-span-2 text-center">
-                    <button class="btn bg-yellow-500 hover:bg-yellow-600 transition text-white font-medium px-15 py-3 rounded-full">Book Studio Session</button>
+                    <button class="btn bg-yellow-500 hover:bg-yellow-600 transition text-white font-medium px-16 py-3 rounded-full">Book Studio Session</button>
                 </div>
             </form>
         </div>
     </section>
 
-    <!-- Testimonials (updated for music context) -->
+    <!-- Testimonials -->
     <section class="testimonials section-padding bg-[var(--lightPink)]" id="testimonials">
         <div class="section-title" data-aos="fade-up">
             <h2 class="section-heading">What Artists Say</h2>
-            <p class="section-description">Real feedback from artists who created magic at RIM Records.</p>
+            <p class="section-description">Real words from artists who created magic at RIM Records.</p>
         </div>
 
         <div class="w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center" data-aos="fade-up">
-            <!-- You can update these with real testimonials later -->
-            <div class="w-full bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition duration-500">
+            <div class="w-full bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
                 <div class="flex items-center gap-4 mb-6">
-                    <img src="src/assets/images/user1.jpg" alt="Artist" class="w-20 h-20 object-cover rounded-full">
+                    <img src="src/assets/images/user1.jpg" alt="Rick Mutune" class="w-20 h-20 object-cover rounded-full">
                     <div>
-                        <h3 class="text-lg font-semibold capitalize text-black">Rick Mutune</h3>
-                        <small class="text-sm font-normal text-gray-500">Recording Artist</small>
+                        <h3 class="text-lg font-semibold">Rick Mutune</h3>
+                        <small class="text-sm text-gray-500">Reggae Artist</small>
                     </div>
                 </div>
-                <p class="text-base font-normal text-gray-600 italic">"The sound quality and creative direction at RIM Records took my track to another level. Professional and passionate team!"</p>
+                <p class="text-gray-600 italic">"RIM Records gave my sound the polish and power it deserved. The team truly understands the vision."</p>
             </div>
-            
-            <div class="w-full bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition duration-500">
-                <div class="flex items-center gap-4 mb-6">
-                    <img src="src/assets/images/user1.jpg" alt="Artist" class="w-20 h-20 object-cover rounded-full">
-                    <div>
-                        <h3 class="text-lg font-semibold capitalize text-black">Rick Mutune</h3>
-                        <small class="text-sm font-normal text-gray-500">Recording Artist</small>
-                    </div>
-                </div>
-                <p class="text-base font-normal text-gray-600 italic">"The sound quality and creative direction at RIM Records took my track to another level. Professional and passionate team!"</p>
-            </div>
-            
-            <div class="w-full bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition duration-500">
-                <div class="flex items-center gap-4 mb-6">
-                    <img src="src/assets/images/user1.jpg" alt="Artist" class="w-20 h-20 object-cover rounded-full">
-                    <div>
-                        <h3 class="text-lg font-semibold capitalize text-black">Rick Mutune</h3>
-                        <small class="text-sm font-normal text-gray-500">Recording Artist</small>
-                    </div>
-                </div>
-                <p class="text-base font-normal text-gray-600 italic">"The sound quality and creative direction at RIM Records took my track to another level. Professional and passionate team!"</p>
-            </div>
-            
 
-            <!-- Add 2 more similar cards as needed -->
+            <div class="w-full bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
+                <div class="flex items-center gap-4 mb-6">
+                    <img src="src/assets/images/user2.jpg" alt="Lily Musicke" class="w-20 h-20 object-cover rounded-full">
+                    <div>
+                        <h3 class="text-lg font-semibold">Lily Musicke</h3>
+                        <small class="text-sm text-gray-500">RnB / Gospel Artist</small>
+                    </div>
+                </div>
+                <p class="text-gray-600 italic">"Professional studio, warm team, and incredible sound quality. My best recording experience yet."</p>
+            </div>
+
+            <div class="w-full bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
+                <div class="flex items-center gap-4 mb-6">
+                    <img src="src/assets/images/user3.jpg" alt="Gicho" class="w-20 h-20 object-cover rounded-full">
+                    <div>
+                        <h3 class="text-lg font-semibold">Gicho</h3>
+                        <small class="text-sm text-gray-500">Urban Rhumba Artist</small>
+                    </div>
+                </div>
+                <p class="text-gray-600 italic">"From beat to final mix, everything was on another level. RIM Records is the future of Kenyan music."</p>
+            </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section class="section content section-padding" id="contact">
         <div class="section-title" data-aos="fade-up">
             <h2 class="section-heading">Get In Touch</h2>
-            <p class="section-description">Ready to record, mix, or discuss a project? Let's make music together.</p>
+            <p class="section-description">Ready to record, mix, or start a new project? Let's create together.</p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full lg:max-w-6xl mx-auto" data-aos="fade-up">
-            <!-- Contact Info -->
             <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-right">
-                <h3 class="text-2xl font-semibold mb-4 capitalize">Studio Location & Contact</h3>
+                <h3 class="text-2xl font-semibold mb-4">Studio Location & Contact</h3>
                 <p class="text-gray-600 mb-6">Nairobi, Kenya</p>
-
-                <div class="space-y-4 text-gray-700 mb-6">
+                <div class="space-y-4 text-gray-700">
                     <div class="flex items-center gap-4">
-                        <span><i class="fa-solid fa-location-dot"></i></span>
-                        <p>Nairobi, Kenya (Exact location available upon booking)</p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Nairobi, Kenya (Exact address given after booking confirmation)</p>
                     </div>
                     <div class="flex items-center gap-4">
-                        <span><i class="fa-solid fa-phone-volume"></i></span>
-                        <p>+254 7XX XXX XXX (WhatsApp & Calls)</p>
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <p>+254 712 345 678 (Calls & WhatsApp)</p>
                     </div>
                     <div class="flex items-center gap-4">
-                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <i class="fa-solid fa-envelope"></i>
                         <p>info@rimrecords.co.ke</p>
                     </div>
                 </div>
-
-                <!-- You can keep or replace the Google Maps iframe with your actual studio location -->
             </div>
 
-            <!-- Contact Form -->
             <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-left">
-                <form action="" class="contact_form space-y-6" id="contact_form">
+                <form class="contact_form space-y-6">
                     <div>
-                        <label for="contact_fullname" class="block text-sm font-medium text-gray-700 mb-1 capitalize">Your Name / Artist Name:</label>
-                        <input type="text" placeholder="Enter your name" id="contact_fullname" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400" required>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Your Name / Artist Name</label>
+                        <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="Enter your name" required>
                     </div>
                     <div>
-                        <label for="contact_email" class="block text-sm font-medium text-gray-700 mb-1 capitalize">Your Email:</label>
-                        <input type="email" placeholder="Enter your email" id="contact_email" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400" required>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                        <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="you@gmail.com" required>
                     </div>
                     <div>
-                        <label for="contact_message" class="block text-sm font-medium text-gray-700 mb-1 capitalize">Tell us about your project:</label>
-                        <textarea id="contact_message" placeholder="Recording, mixing, beat production, video, etc." class="w-full h-40 px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Project Details</label>
+                        <textarea class="w-full h-40 px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="Tell us about your project..."></textarea>
                     </div>
-                    <div>
-                        <button type="submit" class="btn bg-yellow-500 hover:bg-yellow-600 text-white font-medium px-8 py-3 rounded-full transition duration-500">Send Message</button>
-                    </div>
+                    <button type="submit" class="btn bg-yellow-500 hover:bg-yellow-600 text-white font-medium px-8 py-3 rounded-full transition">Send Message</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer (updated) -->
+    <!-- Footer -->
     <footer class="footer bg-[var(--black)] footer-padding">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 justify-center w-full mx-auto">
-            <div class="w-full">
-                <h3 class="text-2xl font-semibold text-white mb-4 capitalize">RIM Records</h3>
-                <p class="text-base leading-relaxed text-gray-300 mb-4">Nairobi-based music production studio. Free the vision. Fuel the vibes. Master the sound.</p>
-
-                <div class="flex items-center mt-4 gap-4">
-                    <a href="#" class="w-10 h-10 bg-gray-200/90 flex items-center justify-center text-xl text-yellow-500 rounded-sm hover:bg-yellow-500 hover:text-white transition duration-500"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="w-10 h-10 bg-gray-200/90 flex items-center justify-center text-xl text-yellow-500 rounded-sm hover:bg-yellow-500 hover:text-white transition duration-500"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#" class="w-10 h-10 bg-gray-200/90 flex items-center justify-center text-xl text-yellow-500 rounded-sm hover:bg-yellow-500 hover:text-white transition duration-500"><i class="fa-brands fa-tiktok"></i></a>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 w-full mx-auto">
+            <div>
+                <h3 class="text-2xl font-semibold text-white mb-4">RIM Records</h3>
+                <p class="text-gray-300 mb-4">Nairobi-based music production house turning visions into legendary sound.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 bg-gray-200/90 flex items-center justify-center text-yellow-500 rounded hover:bg-yellow-500 hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 bg-gray-200/90 flex items-center justify-center text-yellow-500 rounded hover:bg-yellow-500 hover:text-white transition"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="w-10 h-10 bg-gray-200/90 flex items-center justify-center text-yellow-500 rounded hover:bg-yellow-500 hover:text-white transition"><i class="fa-brands fa-tiktok"></i></a>
                 </div>
             </div>
-
-            <!-- Quick links, hours, contact updated similarly -->
-            <!-- ... (you can adjust opening hours to studio hours if needed) -->
         </div>
 
-        <div class="border-t border-gray-500/90 mt-10 pt-8 text-center text-base text-gray-500">
+        <div class="border-t border-gray-500/90 mt-10 pt-8 text-center text-gray-500">
             <p>&copy; 2026 RIM Records. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <!-- Back to top btn (unchanged) -->
-    <button class="btn backToTop fixed bottom-2 right-4 w-12 h-12 bg-yellow-500 rounded-sm text-white text-xl translate-y-[20px] opacity-0 transition duration-500"><i class="fa-solid fa-arrow-turn-up"></i></button>
+    <button class="btn backToTop fixed bottom-2 right-4 w-12 h-12 bg-yellow-500 rounded-sm text-white text-xl translate-y-[20px] opacity-0 transition"><i class="fa-solid fa-arrow-turn-up"></i></button>
 
     <script src="src/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
