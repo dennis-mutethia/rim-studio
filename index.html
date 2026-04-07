@@ -35,8 +35,8 @@
                 <!-- Desktop Navbar -->
                 <nav class="navbar hidden md:block">
                     <ul class="navlist flex items-center gap-6">
-                        <li class="navitem"><a href="#hero" class="navlink text-white active hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500 ease-in-out">Home</a></li>
-                        <li class="navitem"><a href="#menu" class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500 ease-in-out">Gallery</a></li>
+                        <li class="navitem"><a href="#home" class="navlink text-white active hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500 ease-in-out">Home</a></li>
+                        <li class="navitem"><a href="#videos" class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500 ease-in-out">Videos</a></li>
                         <li class="navitem"><a href="#services" class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500 ease-in-out">Services</a></li>
                         <li class="navitem"><a href="#reservation" class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500 ease-in-out">Studio Booking</a></li>
                         <li class="navitem"><a href="#about" class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500 ease-in-out">About</a></li>
@@ -48,9 +48,9 @@
                 <nav class="mobile-menu md:hidden fixed top-0 right-[-100%] w-[100%] sm:w-[50%] h-[100%] px-4 py-12 bg-white z-20 shadow-lg overflow-hidden transition-all duration-500 ease-in-out">
                     <span class="close absolute top-2 right-0 text-3xl text-red-500 cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
                     <ul class="navlist flex flex-col items-start gap-6">
-                        <li class="navitem"><a href="#hero" class="navlink text-[#222] active hover:text-yellow-500 text-xl font-normal capitalize transition-all duration-500 ease-in-out">Home</a></li>
+                        <li class="navitem"><a href="#home" class="navlink text-[#222] active hover:text-yellow-500 text-xl font-normal capitalize transition-all duration-500 ease-in-out">Home</a></li>
                         <li class="navitem"><a href="#about" class="navlink text-[#222] hover:text-yellow-500 text-xl font-normal capitalize transition-all duration-500 ease-in-out">About</a></li>
-                        <li class="navitem"><a href="#menu" class="navlink text-[#222] hover:text-yellow-500 text-xl font-normal capitalize transition-all duration-500 ease-in-out">Gallery</a></li>
+                        <li class="navitem"><a href="#videos" class="navlink text-[#222] hover:text-yellow-500 text-xl font-normal capitalize transition-all duration-500 ease-in-out">Videos</a></li>
                         <li class="navitem"><a href="#services" class="navlink text-[#222] hover:text-yellow-500 text-xl font-normal capitalize transition-all duration-500 ease-in-out">Services</a></li>
                         <li class="navitem"><a href="#reservation" class="navlink text-[#222] hover:text-yellow-500 text-xl font-normal capitalize transition-all duration-500 ease-in-out">Studio Booking</a></li>
                         <li class="navitem"><a href="#contact" class="navlink text-[#222] hover:text-yellow-500 text-xl font-normal capitalize transition-all duration-500 ease-in-out">Contact</a></li>
@@ -64,21 +64,21 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Home Section -->
     <main>
-        <section class="section hero section-padding w-full h-screen bg-[#f9f9f9] flex flex-col justify-center items-center" id="hero">
+        <section class="section hero section-padding w-full h-screen bg-[#f9f9f9] flex flex-col justify-center items-center" id="home">
             <div class="hero-content text-center w-full max-w-md sm:max-w-xl lg:max-w-2xl mx-auto" data-aos="fade-up">
                 <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold capitalize text-white mb-2">Welcome to <span class="text-yellow-500 font-bold">RIM Records</span></h1>
                 <p class="text-lg font-normal text-white">Free the Vision. Fuel the Vibes. Master the Sound.</p>
-                <a href="#menu" class="btn primary-btn mt-4">Explore Our Gallery</a>
+                <a href="#videos" class="btn primary-btn mt-4">Explore Our Videos</a>
             </div>
         </section>
     </main>
 
-    <!-- Gallery / Music Videos -->
-    <section class="section menu section-padding bg-[var(--lightPink)]" id="menu">
+    <!-- Music Videos -->
+    <section class="section menu section-padding bg-[var(--lightPink)]" id="videos">
         <div class="section-title" data-aos="fade-up">
-            <h2 class="section-heading">Our Gallery</h2>
+            <h2 class="section-heading">Our Videos</h2>
             <p class="section-description">Explore our most loved music videos and visuals, crafted with passion in Nairobi.</p>
         </div>
 
@@ -179,6 +179,7 @@
                     <a href="#" class="btn text-base font-medium hover:text-yellow-500 transition">Watch Full Video <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
+
             <div class="card w-full h-auto xl:h-60 flex flex-col xl:flex-row gap-0 xl:gap-5" data-aos="zoom-in" data-aos-delay="100">
                 <iframe src="https://www.youtube.com/embed/oxfmvQoMA-U"></iframe>
                 <div class="bg-white shadow-lg rounded-lg py-4 px-3 flex flex-col justify-center">
@@ -188,6 +189,7 @@
                     <a href="#" class="btn text-base font-medium hover:text-yellow-500 transition">Watch Full Video <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
+
             <div class="card w-full h-auto xl:h-60 flex flex-col xl:flex-row gap-0 xl:gap-5" data-aos="zoom-in" data-aos-delay="100">
                 <iframe src="https://www.youtube.com/embed/oxfmvQoMA-U"></iframe>
                 <div class="bg-white shadow-lg rounded-lg py-4 px-3 flex flex-col justify-center">
@@ -197,7 +199,16 @@
                     <a href="#" class="btn text-base font-medium hover:text-yellow-500 transition">Watch Full Video <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
-            <!-- Add more cards as needed -->
+
+            <div class="card w-full h-auto xl:h-60 flex flex-col xl:flex-row gap-0 xl:gap-5" data-aos="zoom-in" data-aos-delay="100">
+                <iframe src="https://www.youtube.com/embed/oxfmvQoMA-U"></iframe>
+                <div class="bg-white shadow-lg rounded-lg py-4 px-3 flex flex-col justify-center">
+                    <p class="text-sm text-red-400 uppercase mb-2 tracking-widest">Reggae / Dancehall</p>
+                    <h3 class="text-xl font-bold mb-2">Rick Mutune - Parte</h3>
+                    <p class="text-gray-500 mb-4 font-normal">The streets are calling. High energy fusion ready to move the crowd.</p>
+                    <a href="#" class="btn text-base font-medium hover:text-yellow-500 transition">Watch Full Video <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -217,7 +228,7 @@
 
                 <p class="text-gray-600 text-lg mb-6">From reggae and rhumba to RnB, Gengetone, and beyond — every session is crafted with passion, precision, and purpose.</p>
 
-                <a href="#menu" class="btn primary-btn">Explore Our Work</a>
+                <a href="#videos" class="btn primary-btn">Explore Our Work</a>
             </div>
         </div>
     </section>
