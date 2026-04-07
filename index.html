@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIM Studio - Taste Beyond Expectations</title>
+
+    <!-- Output css file -->
+    <link href="./src/output.css" rel="stylesheet">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Fontawsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+
+    <!-- AOS cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body class="overflow-x-hidden">
+    <!-- Header  -->
+    <header class="header fixed top-0 left-0 w-[100%] py-4 px-[2rem] md:px-[4rem] lg:px-[6rem] bg-none z-10">
+        <!-- bg-[#f9f9f9  -->
+        <div class="header-container flex justify-between items-center">
+            <div class="header-left">
+                <a href="#" class="logo text-2xl font-semibold capitalize text-white">RIM Studio</a>
+            </div>
+
+            <div class="header-right">
+
+                <!-- Desktop Navbar -->
+                <nav class="navbar hidden md:block">
+                    <ul class="navlist flex items-center gap-6">
+                        <li class="navitem"><a href="#hero"
+                                class="navlink text-white active hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500 ease-in-out">Home</a>
+                        </li>
+                        <li class="navitem"><a href="#menu"
+                                class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500 ease-in-out">Gallery</a>
+                        </li>
+                        <li class="navitem"><a href="#services"
+                                class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500 ease-in-out">Services</a>
+                        </li>
+                        <li class="navitem"><a href="#reservation"
+                                class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500 ease-in-out">Reservation</a>
+                        </li>
+                        <li class="navitem"><a href="#about"
+                                class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500 ease-in-out">About</a>
+                        </li>
+                        <li class="navitem"><a href="#contact"
+                                class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500 ease-in-out">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile Navbar -->
+                <nav
+                    class="mobile-menu md:hidden fixed top-0 right-[-100%] w-[100%] sm:w-[50%] h-[100%] px-4 py-12 bg-white z-20 shadow-lg overflow-hidden transition-all duration-500 ease-in-out">
+                    <span class="close absolute top-2 right-0 text-3xl text-red-500 cursor-pointer"><i
+                            class="fa-solid fa-xmark"></i></span>
+                    <ul class="navlist flex flex-col items-start gap-6">
+                        <li class="navitem"><a href="#hero"
+                                class="navlink text-[#222] active hover:text-yellow-500 text-xl font-normal capitalize transition-all duration-500 ease-in-out">Home</a>
+                        </li>
+                        <li class="navitem"><a href="#about"
+                                class="navlink text-[#222] hover:text-yellow-500 text-xl font-normal capitalize transition-all duration-500 ease-in-out">About</a>
+                        </li>
+                        <li class="navitem"><a href="#menu"
+                                class="navlink text-[#222] hover:text-yellow-500 text-xl font-normal capitalize transition-all duration-500 ease-in-out">Menu</a>
+                        </li>
+                        <li class="navitem"><a href="#services"
+                                class="navlink text-[#222] hover:text-yellow-500 text-xl font-normal capitalize transition-all duration-500 ease-in-out">Services</a>
+                        </li>
+                        <li class="navitem"><a href="#reservation"
+                                class="navlink text-[#222] hover:text-yellow-500 text-xl font-normal capitalize transition-all duration-500 ease-in-out">Reservation</a>
+                        </li>
+                        <li class="navitem"><a href="#contact"
+                                class="navlink text-[#222] hover:text-yellow-500 text-xl font-normal capitalize transition-all duration-500 ease-in-out">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="menu-bar md:hidden text-2xl text-white cursor-pointer">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section
+            class="section hero section-padding w-full h-screen bg-[#f9f9f9] flex flex-col justify-center items-center"
+            id="hero">
+            <div class="hero-content text-center w-full max-w-md sm:max-w-xl lg:max-w-2xl mx-auto" data-aos="fade-up">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold capitalize text-white mb-2">Welcome to <span
+                        class="text-yellow-500 font-bold">RIM Studio</span></h1>
+                <p class="text-lg font-normal text-white">Taste beyond expectations - handcrafted dishes made with love
+                    and the finest ingredients.</p>
+                <a href="#menu" class="btn primary-btn mt-4">Explore Our Gallery</a>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Menu -->
+    <section class="section menu section-padding bg-[var(--lightPink)]" id="menu">
+        <div class="section-title" data-aos="fade-up">
+            <h2 class="section-heading">Our Gallery / Content</h2>
+            <p class="section-description">Explore our producer's most loved music videos, made fresh with passion.</p>
+        </div>
+
+        <!-- Tab btns -->
+        <div class="tab-btns flex flex-wrap items-center justify-center gap-6 mb-16" data-aos="fade-up">
+            <button class="btn tab-btn px-5 py-3 bg-gray-200/50 rounded-full active hover:bg-yellow-500 transition"
+                data-category="all">All</button>
+            <button class="btn tab-btn px-5 py-3 bg-gray-200/50 rounded-full hover:bg-yellow-500 transition"
+                data-category="breakfast">Breakfast</button>
+            <button class="btn tab-btn px-5 py-3 bg-gray-200/50 rounded-full hover:bg-yellow-500 transition"
+                data-category="lunch">Lunch</button>
+            <button class="btn tab-btn px-5 py-3 bg-gray-200/50 rounded-full hover:bg-yellow-500 transition"
+                data-category="dinner">Dinner</button>
+        </div>
+
+        <!-- Tab content: menu grid -->
+        <div class="menu-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-center" data-aos="fade-up">
+            <!-- Menu item -->
+            <div class="menu-card bg-white rounded-xl shadow-lg overflow-hidden group transition"
+                data-category="breakfast">
+                <img src="src/assets/images/menu1.jpg" alt="menu 1"
+                    class="w-full h-60 object-cover group-hover:scale-105 transition duration-500">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-1">
+                        <h3 class="text-xl font-semibold capitalize">Bruschetta</h3>
+                        <span class="text-yellow-500 font-bold text-lg"><i
+                                class="fa-solid fa-indian-rupee-sign"></i>180</span>
+                    </div>
+                    <p class="text-sm text-red-400 uppercase mb-2">Starter</p>
+                    <p class="text-gray-600 font-normal">Toasted bread topped with garlic, tomatoes, basil & olive oil.
+                    </p>
+                </div>
+            </div>
+
+            <div class="menu-card bg-white rounded-xl shadow-lg overflow-hidden group transition"
+                data-category="breakfast">
+                <img src="src/assets/images/menu2.jpg" alt="menu 2"
+                    class="w-full h-60 object-cover group-hover:scale-105 transition duration-500">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-1">
+                        <h3 class="text-xl font-semibold capitalize">Stuffed Mushrooms</h3>
+                        <span class="text-yellow-500 font-bold text-lg"><i
+                                class="fa-solid fa-indian-rupee-sign"></i>220</span>
+                    </div>
+                    <p class="text-sm text-red-400 uppercase mb-2">Starter</p>
+                    <p class="text-gray-600 font-normal">Mushrooms filled with herbed cream cheese, baked to golden
+                        perfection.</p>
+                </div>
+            </div>
+
+            <div class="menu-card bg-white rounded-xl shadow-lg overflow-hidden group transition"
+                data-category="dinner">
+                <img src="src/assets/images/menu3.jpg" alt="menu 2"
+                    class="w-full h-60 object-cover group-hover:scale-105 transition duration-500">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-1">
+                        <h3 class="text-xl font-semibold capitalize">Grilled chicken alfredo</h3>
+                        <span class="text-yellow-500 font-bold text-lg"><i
+                                class="fa-solid fa-indian-rupee-sign"></i>350</span>
+                    </div>
+                    <p class="text-sm text-red-400 uppercase mb-2">Starter</p>
+                    <p class="text-gray-600 font-normal">Creamy fettuccine pasta with grilled chicken, mushrooms, and
+                        parmesan.</p>
+                </div>
+            </div>
+
+            <div class="menu-card bg-white rounded-xl shadow-lg overflow-hidden group transition" data-category="lunch">
+                <img src="src/assets/images/menu4.jpg" alt="menu 2"
+                    class="w-full h-60 object-cover group-hover:scale-105 transition duration-500">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-1">
+                        <h3 class="text-xl font-semibold capitalize">Paneer Tikka Masala</h3>
+                        <span class="text-yellow-500 font-bold text-lg"><i
+                                class="fa-solid fa-indian-rupee-sign"></i>280</span>
+                    </div>
+                    <p class="text-sm text-red-400 uppercase mb-2">Main Course</p>
+                    <p class="text-gray-600 font-normal">Tender paneer in creamy tikka sauce served with naan or steamed
+                        rice.</p>
+                </div>
+            </div>
+
+            <div class="menu-card bg-white rounded-xl shadow-lg overflow-hidden group transition" data-category="lunc">
+                <img src="src/assets/images/menu5.jpg" alt="menu 2"
+                    class="w-full h-60 object-cover group-hover:scale-105 transition duration-500">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-1">
+                        <h3 class="text-xl font-semibold capitalize">Tiramisu</h3>
+                        <span class="text-yellow-500 font-bold text-lg"><i
+                                class="fa-solid fa-indian-rupee-sign"></i>200</span>
+                    </div>
+                    <p class="text-sm text-red-400 uppercase mb-2">Dessert</p>
+                    <p class="text-gray-600 font-normal">Classic Italian layers of espresso-soaked cake and creamy
+                        mascarpone.</p>
+                </div>
+            </div>
+
+            <div class="menu-card bg-white rounded-xl shadow-lg overflow-hidden group transition"
+                data-category="breakfast">
+                <img src="src/assets/images/menu6.jpg" alt="menu 2"
+                    class="w-full h-60 object-cover group-hover:scale-105 transition duration-500">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-1">
+                        <h3 class="text-xl font-semibold capitalize">Chocolate Lava Cake</h3>
+                        <span class="text-yellow-500 font-bold text-lg"><i
+                                class="fa-solid fa-indian-rupee-sign"></i>220</span>
+                    </div>
+                    <p class="text-sm text-red-400 uppercase mb-2">Dessert</p>
+                    <p class="text-gray-600 font-normal">Molten chocolate cake with vanilla ice cream - warm, rich &
+                        delightful.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chef's Picks -->
+    <section class="section chefs-picks section-padding" id="chefs-picks">
+        <div class="w-full lg:w-[60%] mx-auto text-center mb-16" data-aos="fade-up">
+            <h2 class="text-4xl md:text-5xl font-semibold capitalize mb-4">Chef's Hanpicked Specials</h2>
+            <p class="text-lg font-normal text-gray-500">Discover the finest dishes crafted with passion, freshness, and
+                bold flavor.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 justify-center" data-aos="fade-up">
+            <div class="card w-full h-auto xl:h-60 flex flex-col xl:flex-row gap-0 xl:gap-5" data-aos="zoom-in"
+                data-aos-delay="100">
+                <img src="src/assets/images/special1.jpg" alt="Grilled Lemon Salmon"
+                    class="w-full xl:w-60 h-60 object-cover rounded-xl shadow-lg mb-4">
+                <div class="bg-white shadow-lg rounded-lg py-4 px-3 flex flex-col justify-center">
+                    <p class="text-sm text-red-400 uppercase mb-2 tracking-widest">Seafood</p>
+                    <h3 class="text-xl font-bold mb-2">Grilled Lemon Salmon</h3>
+                    <p class="text-gray-500 mb-4 font-normal">Perfectly grilled salmon with lemon zest and roasted
+                        vegetables.</p>
+                    <a href="#" class="btn text-base font-medium hover:text-yellow-500 transition">Learn More <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="card w-full h-auto xl:h-60 flex flex-col xl:flex-row gap-0 xl:gap-5" data-aos="zoom-in"
+                data-aos-delay="200">
+                <img src="src/assets/images/special2.jpg" alt="Pasta Primavera"
+                    class="w-full xl:w-60 h-60 object-cover rounded-xl shadow-lg mb-4">
+                <div class="bg-white shadow-lg rounded-lg py-4 px-3 flex flex-col justify-center">
+                    <p class="text-sm text-red-400 uppercase mb-2 tracking-widest">Italian</p>
+                    <h3 class="text-xl font-bold mb-2">Pasta Primavera</h3>
+                    <p class="text-gray-500 mb-4 font-normal">Classic pasta tossed in olive oil with seasonal vegetables
+                        and herbs.</p>
+                    <a href="#" class="btn text-base font-medium hover:text-yellow-500 transition">Learn More <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="card w-full h-auto xl:h-60 flex flex-col xl:flex-row gap-0 xl:gap-5" data-aos="zoom-in"
+                data-aos-delay="300">
+                <img src="src/assets/images/special3.jpg" alt="Gourmet Beef Burger"
+                    class="w-full xl:w-60 h-60 object-cover rounded-xl shadow-lg mb-4">
+                <div class="bg-white shadow-lg rounded-lg py-4 px-3 flex flex-col justify-center">
+                    <p class="text-sm text-red-400 uppercase mb-2 tracking-widest">American</p>
+                    <h3 class="text-xl font-bold mb-2">Gourmet Beef Burger</h3>
+                    <p class="text-gray-500 mb-4 font-normal">Juicy beef patty layered with cheddar, lettuce, tomato &
+                        our secret sauce.</p>
+                    <a href="#" class="btn text-base font-medium hover:text-yellow-500 transition">Learn More <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="card w-full h-auto xl:h-60 flex flex-col xl:flex-row gap-0 xl:gap-5" data-aos="zoom-in">
+                <img src="src/assets/images/special4.jpg" alt="Chocolate Lava Cake"
+                    class="w-full xl:w-60 h-60 object-cover rounded-xl shadow-lg mb-4">
+                <div class="bg-white shadow-lg rounded-lg py-4 px-3 flex flex-col justify-center">
+                    <p class="text-sm text-red-400 uppercase mb-2 tracking-widest">Dessert</p>
+                    <h3 class="text-xl font-bold mb-2">Chocolate Lava Cake</h3>
+                    <p class="text-gray-500 mb-4 font-normal">Warm chocolate cake with a gooey molten center served with
+                        vanilla ice cream.</p>
+                    <a href="#" class="btn text-base font-medium hover:text-yellow-500 transition">Learn More <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about section-padding bg-[#fff7f0] overflow-x-hidden" id="about">
+        <div class="about-content grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <!-- Left Side : image -->
+            <div class="w-full h-full hidden sm:block" data-aos="fade-right">
+                <img src="src/assets/images/special1.jpg" alt="about image"
+                    class="w-full h-full object-cover rounded-xl shadow-xl">
+            </div>
+
+            <!-- Right Side : text -->
+            <div class="w-full lg:max-w-2xl mx-auto" data-aos="fade-left">
+                <small class="inline-block text-sm uppercase tracking-widest text-yellow-500 mb-3">Our Story</small>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-800 capitalize leading-[1.1]">Passionately
+                    Crafted, Flawlessly Served</h2>
+                <p class="text-gray-600 text-lg mb-6">At <span class="font-semibold text-black capitalize">RIM
+                        Studio</span>, we blend timeless culinary
+                    traditions with a modern twist.
+                    From sourcing the freshest ingredients to curating bold, unforgettable flavors - we're all about
+                    giving you a dining experience that's warm, welcoming, and deeply satisfying.</p>
+
+                <p class="text-gray-600 text-lg mb-6">Whether it's a romantic dinner or a casual lunch with friends,
+                    every dish we serve is a celebration
+                    of taste and creativity.</p>
+
+                <a href="#menu" class="btn primary-btn">Explore Our Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section gallery section-padding" id="gallery">
+        <!-- Section title -->
+        <div class="section-title" data-aos="fade-up">
+            <h2 class="section-heading">Our Food Gallery</h2>
+            <p class="section-description">A glimpse into the mouthwatering dishes we proudly serve every day at
+                RIM Studio.</p>
+        </div>
+
+        <!-- Content -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center" data-aos="fade-up">
+            <div class="overflow-hidden rounded-xl shadow-lg group col-span-1 lg:col-span-2">
+                <img src="src/assets/images/gallery1.jpg" alt="gallery 1"
+                    class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+            </div>
+            <div class="overflow-hidden rounded-xl shadow-lg group row-span-1 lg:row-span-2">
+                <img src="src/assets/images/gallery2.jpg" alt="gallery 2"
+                    class="w-full h-64 lg:h-full object-cover transition-transform duration-500 group-hover:scale-105">
+            </div>
+            <div class="overflow-hidden rounded-xl shadow-lg group">
+                <img src="src/assets/images/gallery3.jpg" alt="gallery 3"
+                    class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+            </div>
+            <div class="overflow-hidden rounded-xl shadow-lg group">
+                <img src="src/assets/images/gallery4.jpg" alt="gallery 4"
+                    class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+            </div>
+            <div class="overflow-hidden rounded-xl shadow-lg group">
+                <img src="src/assets/images/gallery5.jpg" alt="gallery 5"
+                    class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+            </div>
+            <div class="overflow-hidden rounded-xl shadow-lg group col-span-1 lg:col-span-2">
+                <img src="src/assets/images/gallery6.jpg" alt="gallery 6"
+                    class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section services section-padding" id="services">
+        <!-- Section heading -->
+        <div class="section-title" data-aos="fade-up">
+            <h2 class="section-heading">Our Services</h2>
+            <p class="section-description">We serve more than food - we deliver experience, comfort, and care.</p>
+        </div>
+
+        <!-- Services grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-center" data-aos="fade-up">
+            <!-- Services card -->
+            <div class="card bg-[var(--lightPink)] p-8 rounded-xl shadow-md hover:shadow-xl transition duration-500">
+                <div class="text-yellow-500 text-4xl mb-4">
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 capitalize">Dine-In Experience</h3>
+                <p class="text-gray-600 font-normal text-lg">Enjoy a warm and welcoming atmosphere with freshly prepared
+                    dishes served to perfection, making every meal a memorable occasion.</p>
+            </div>
+
+            <div class="card bg-[var(--lightPink)] p-8 rounded-xl shadow-md hover:shadow-xl transition duration-500">
+                <div class="text-yellow-500 text-4xl mb-4">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 capitalize">Fast Delivery</h3>
+                <p class="text-gray-600 font-normal text-lg">Savor your favorite meals at home with our reliable and
+                    quick delivery service, ensuring freshness and flavor every time.</p>
+            </div>
+
+            <div class="card bg-[var(--lightPink)] p-8 rounded-xl shadow-md hover:shadow-xl transition duration-500">
+                <div class="text-yellow-500 text-4xl mb-4">
+                    <i class="fa-solid fa-bell-concierge"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 capitalize">Online Reservation</h3>
+                <p class="text-gray-600 font-normal text-lg">Book your table in advance with our easy online reservation
+                    system, ensuring a hassle-free dining experience.</p>
+            </div>
+
+            <div class="card bg-[var(--lightPink)] p-8 rounded-xl shadow-md hover:shadow-xl transition duration-500">
+                <div class="text-yellow-500 text-4xl mb-4">
+                    <i class="fa-solid fa-cake-candles"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 capitalize">Event Catering</h3>
+                <p class="text-gray-600 font-normal text-lg">From birthdays to corporate events, our catering service
+                    brings delicious food and excellent presentation to your special occasions.</p>
+            </div>
+
+            <div class="card bg-[var(--lightPink)] p-8 rounded-xl shadow-md hover:shadow-xl transition duration-500">
+                <div class="text-yellow-500 text-4xl mb-4">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 capitalize">Vegan & Healthy Options</h3>
+                <p class="text-gray-600 font-normal text-lg">Delight in a variety of wholesome vegan and
+                    health-conscious dishes crafted with fresh, nutrient-rich ingredients.</p>
+            </div>
+
+            <div class="card bg-[var(--lightPink)] p-8 rounded-xl shadow-md hover:shadow-xl transition duration-500">
+                <div class="text-yellow-500 text-4xl mb-4">
+                    <i class="fa-solid fa-wifi"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 capitalize">Free Wi-Fi & Comfort</h3>
+                <p class="text-gray-600 font-normal text-lg">Stay connected while you relax with complimentary Wi-Fi and
+                    cozy seating designed for comfort and convenience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chef Section -->
+    <section class="section chefs section-padding bg-[var(--lightPink)]" id="chefs">
+        <!-- Heading -->
+        <div class="section-title" data-aos="fade-up">
+            <h2 class="section-heading">Meet Our Master Chefs</h2>
+            <p class="section-description">Passionate culinary artists behind every delicious plate we serve.</p>
+        </div>
+
+        <!-- Chefs grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-center" data-aos="fade-up">
+
+            <!-- Chef 1 -->
+            <div class="bg-white shadow-md rounded-xl overflow-hidden hover:shadow-xl transition group"
+                data-aos="zoom-in" data-aos-delay="100">
+                <div class="w-full h-130 overflow-hidden">
+                    <img src="src/assets/images/chef1.jpg" alt="chef1"
+                        class="w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-1 capitalize text-black">Chef Luca Romano</h3>
+                    <p class="text-yellow-500 font-medium text-sm mb-2 uppercase">Italian Cuisine Specialist</p>
+                    <p class="text-gray-600 font-normal text-base">With over 20 years of experience in Italian fine
+                        dining, Chef Luca blends traditional recipes with modern flair to create unforgettable flavors.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Chef 2 -->
+            <div class="bg-white shadow-md rounded-xl overflow-hidden hover:shadow-xl transition group"
+                data-aos="zoom-in" data-aos-delay="200">
+                <div class="w-full h-130 overflow-hidden">
+                    <img src="src/assets/images/chef2.jpg" alt="chef2"
+                        class="w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-1 capitalize text-black">Chef Ahmad Khan</h3>
+                    <p class="text-yellow-500 font-medium text-sm mb-2 uppercase">Indian Tandoor Expert</p>
+                    <p class="text-gray-600 font-normal text-base">Specializing in authentic Indian tandoor cuisine,
+                        Chef Ahmad is known for his perfectly spiced kebabs and rich, aromatic curries.</p>
+                </div>
+            </div>
+
+            <!-- Chef 3 -->
+            <div class="bg-white shadow-md rounded-xl overflow-hidden hover:shadow-xl transition group"
+                data-aos="zoom-in" data-aos-delay="300">
+                <div class="w-full h-130 overflow-hidden">
+                    <img src="src/assets/images/chef3.jpg" alt="chef3"
+                        class="w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-1 capitalize text-black">Chef Daniel Smith</h3>
+                    <p class="text-yellow-500 font-medium text-sm mb-2 uppercase">Pastry & Dessert Artist</p>
+                    <p class="text-gray-600 font-normal text-base">A master of sweet creations, Chef Daniel crafts
+                        elegant pastries and desserts that are as beautiful as they are delicious.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="section reservation section-padding bg-[#fff]" id="reservation">
+        <!-- Heading -->
+        <div class="section-title" data-aos="fade-up">
+            <h2 class="section-heading">Reserve Your Table</h2>
+            <p class="section-description">Enjoy a premium dining experience - book your table in advance.</p>
+        </div>
+
+        <!-- Content: Form container -->
+        <div class="w-full md:max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-md" data-aos="fade-up">
+            <form action="" class="reservation_form grid grid-cols-1 md:grid-cols-2 gap-6" id="reservation_form">
+
+                <!-- Name -->
+                <div>
+                    <label for="reservation_name" class="block mb-2 text-sm font-medium text-gray-700 capitalize">Full
+                        Name:</label>
+                    <input type="text" name="reservation_name" id="reservation_name"
+                        class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                        placeholder="Your Name" required>
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label for="reservation_email"
+                        class="block mb-2 text-sm font-medium text-gray-700 capitalize">Email:</label>
+                    <input type="email" name="reservation_email" id="reservation_email"
+                        class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                        placeholder="you@gmail.com" required>
+                </div>
+
+                <!-- Phone -->
+                <div>
+                    <label for="reservation_phone" class="block mb-2 text-sm font-medium text-gray-700 capitalize">Phone
+                        Number:</label>
+                    <input type="tel" name="reservation_phone" id="reservation_phone"
+                        class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                        placeholder="+910123456789" required>
+                </div>
+
+                <!-- Date -->
+                <div>
+                    <label for="reservation_date"
+                        class="block mb-2 text-sm font-medium text-gray-700 capitalize">Date:</label>
+                    <input type="date" name="reservation_date" id="reservation_date"
+                        class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                        required>
+                </div>
+
+                <!-- Time -->
+                <div>
+                    <label for="reservation_time"
+                        class="block mb-2 text-sm font-medium text-gray-700 capitalize">Time:</label>
+                    <input type="time" name="reservation_time" id="reservation_time"
+                        class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                        required>
+                </div>
+
+                <!-- Guests -->
+                <div>
+                    <label for="reservation_guests"
+                        class="block mb-2 text-sm font-medium text-gray-700 capitalize">Guests:</label>
+                    <input type="number" min="1" max="20" name="reservation_guests" id="reservation_guests"
+                        class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                        placeholder="2" required>
+                </div>
+
+                <!-- Message -->
+                <div class="md:col-span-2">
+                    <label for="reservation_message"
+                        class="block mb-2 text-sm font-medium text-gray-700 capitalize">Additional Notes:</label>
+                    <textarea name="reservation_message" id="reservation_message"
+                        class="w-full h-40 border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                        placeholder="Any special requests?"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="md:col-span-2 text-center">
+                    <button
+                        class="btn bg-yellow-500 hover:bg-yellow-600 transition text-white font-medium px-15 py-3 rounded-full">
+                        Book Now
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-padding bg-[var(--lightPink)]" id="testimonials">
+        <!-- Heading -->
+        <div class="section-title" data-aos="fade-up">
+            <h2 class="section-heading">What Our Guests Say</h2>
+            <p class="section-description">Real stories from real people who tasted the RIM Studio difference.</p>
+        </div>
+
+        <!-- Content: Testimonial cards -->
+        <div class="w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center"
+            data-aos="fade-up">
+
+            <!-- Card -->
+            <div class="w-full bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition duration-500"
+                data-aos="flip-left" data-aos-delay="100">
+                <div class="flex items-center gap-4 mb-6">
+                    <img src="src/assets/images/user1.jpg" alt="John Doe" class="w-20 h-20 object-cover rounded-full">
+                    <div class="flex flex-col gap-1">
+                        <h3 class="text-lg font-semibold capitalize text-black">John Doe</h3>
+                        <small class="text-sm font-normal capitalize text-gray-500">Business Owner</small>
+                    </div>
+                </div>
+                <p class="text-base font-normal text-gray-600 italic leading-relaxed">
+                    <span class="text-yellow-500 text-xl mr-1"><i class="fa-solid fa-quote-left"></i></span>
+                    The food was absolutely amazing! Every dish was bursting with flavor and beautifully presented. I’ll
+                    definitely be coming back with my clients.
+                </p>
+            </div>
+
+            <!-- Card -->
+            <div class="w-full bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition duration-500"
+                data-aos="flip-left" data-aos-delay="100">
+                <div class="flex items-center gap-4 mb-6">
+                    <img src="src/assets/images/user2.jpg" alt="Axel" class="w-20 h-20 object-cover rounded-full">
+                    <div class="flex flex-col gap-1">
+                        <h3 class="text-lg font-semibold capitalize text-black">Axel</h3>
+                        <small class="text-sm font-normal capitalize text-gray-500">Food Blogger</small>
+                    </div>
+                </div>
+                <p class="text-base font-normal text-gray-600 italic leading-relaxed">
+                    <span class="text-yellow-500 text-xl mr-1"><i class="fa-solid fa-quote-left"></i></span>
+                    RIM Studio’s attention to detail is unmatched. From the warm ambience to the perfectly seasoned
+                    dishes,
+                    this place is a must-visit for any food lover.
+                </p>
+            </div>
+
+            <!-- Card -->
+            <div class="w-full bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition duration-500"
+                data-aos="flip-left" data-aos-delay="100">
+                <div class="flex items-center gap-4 mb-6">
+                    <img src="src/assets/images/user3.jpg" alt="Max" class="w-20 h-20 object-cover rounded-full">
+                    <div class="flex flex-col gap-1">
+                        <h3 class="text-lg font-semibold capitalize text-black">Max</h3>
+                        <small class="text-sm font-normal capitalize text-gray-500">Food Enthusiast</small>
+                    </div>
+                </div>
+                <p class="text-base font-normal text-gray-600 italic leading-relaxed">
+                    <span class="text-yellow-500 text-xl mr-1"><i class="fa-solid fa-quote-left"></i></span>
+                    Every bite felt like a journey of flavors. The desserts here are on another level — I could eat them
+                    every day!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section content section-padding" id="contact">
+        <!-- Heading -->
+        <div class="section-title" data-aos="fade-up">
+            <h2 class="section-heading">Get In Touch</h2>
+            <p class="section-description">We'd love to hear from you! Reach out with questions, feedback, or
+                reservations.</p>
+        </div>
+
+        <!-- Content -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full lg:max-w-6xl mx-auto" data-aos="fade-up">
+            <!-- Left content: contact info -->
+            <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-right">
+                <h3 class="text-2xl font-semibold mb-4 capitalize">Contact Information</h3>
+                <p class="text-gray-600 mb-6">Reach us directly via phone, email, or visit us at our location.</p>
+
+                <div class="space-y-4 text-gray-700 mb-6">
+                    <div class="flex items-center gap-4">
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <p>123 Flavor Street, New Delhi, India</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <span><i class="fa-solid fa-phone-volume"></i></span>
+                        <p>+9101234556789</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <p>support@RIM Studio.com</p>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="w-full h-60">
+                    <iframe class="w-full h-full"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112173.19063601906!2d77.12658442075875!3d28.527327337809687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1754851044586!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <!-- Form Right content -->
+            <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-left">
+                <form action="" class="contact_form space-y-6" id="contact_form">
+                    <div>
+                        <label for="contact_fullname"
+                            class="block text-sm font-medium text-gray-700 mb-1 capitalize">Your Name:</label>
+                        <input type="text" placeholder="Enter your name" id="contact_fullname"
+                            class="contact_fullname w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                            required>
+                    </div>
+                    <div>
+                        <label for="contact_email" class="block text-sm font-medium text-gray-700 mb-1 capitalize">Your
+                            Email:</label>
+                        <input type="email" placeholder="Enter your email" id="contact_email"
+                            class="contact_email w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                            required>
+                    </div>
+                    <div>
+                        <label for="contact_message"
+                            class="block text-sm font-medium text-gray-700 mb-1 capitalize">Message:</label>
+                        <textarea name="contact_message" id="contact_message" placeholder="Your Message..."
+                            class=" w-full h-40 px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit"
+                            class="btn bg-yellow-500 hover:bg-yellow-600 text-white font-medium px-8 py-3 rounded-full transition duration-500">Send
+                            Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer bg-[var(--black)] footer-padding">
+        <!-- Footer contain -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 justify-center w-full mx-auto">
+            <!-- Logo + About -->
+            <div class="w-full">
+                <h3 class="text-2xl font-semibold text-white mb-4 capitalize">RIM Studio</h3>
+                <p class="text-base leading-relaxed text-gray-300 mb-4">Taste beyond expectations. RIM Studio is your
+                    perfect destination for authentic flavors and memorable
+                    moments.</p>
+
+                <!-- Social icons -->
+                <div class="flex items-center mt-4 gap-4">
+                    <a href=""
+                        class="w-10 h-10 bg-gray-200/90 flex items-center justify-center text-xl text-yellow-500 rounded-sm hover:bg-yellow-500 hover:text-white transition duration-500"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""
+                        class="w-10 h-10 bg-gray-200/90 flex items-center justify-center text-xl text-yellow-500 rounded-sm hover:bg-yellow-500 hover:text-white transition duration-500"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""
+                        class="w-10 h-10 bg-gray-200/90 flex items-center justify-center text-xl text-yellow-500 rounded-sm hover:bg-yellow-500 hover:text-white transition duration-500"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href=""
+                        class="w-10 h-10 bg-gray-200/90 flex items-center justify-center text-xl text-yellow-500 rounded-sm hover:bg-yellow-500 hover:text-white transition duration-500"><i
+                            class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-4 capitalize">Quick links</h4>
+                <ul class="space-y-2">
+                    <li class="text-base capitalize text-gray-300 hover:text-yellow-400 transition duration-500"><a
+                            href="#home">home</a></li>
+                    <li class="text-base capitalize text-gray-300 hover:text-yellow-400 transition duration-500"><a
+                            href="#about">about</a></li>
+                    <li class="text-base capitalize text-gray-300 hover:text-yellow-400 transition duration-500"><a
+                            href="#menu">menu</a></li>
+                    <li class="text-base capitalize text-gray-300 hover:text-yellow-400 transition duration-500"><a
+                            href="#services">services</a></li>
+                    <li class="text-base capitalize text-gray-300 hover:text-yellow-400 transition duration-500"><a
+                            href="#reservation">reservation</a></li>
+                    <li class="text-base capitalize text-gray-300 hover:text-yellow-400 transition duration-500"><a
+                            href="#contact">contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Opening Hours -->
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-4 capitalize">Opening Hours</h4>
+                <ul class="space-y-2">
+                    <li class="text-base capitalize text-gray-300">Mon - Fri: 11:00 AM - 10:00 PM</li>
+                    <li class="text-base capitalize text-gray-300">Sat - Sun: 12:00 PM - 11:00 PM</li>
+                    <li class="text-base capitalize text-gray-300">Public Holidays: Open</li>
+                </ul>
+            </div>
+
+            <!-- Contact info -->
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-4 capitalize">Contact Us</h4>
+                <ul class="space-y-2">
+                    <li class="text-base capitalize text-gray-300 flex items-center gap-3"><i
+                            class="text-yellow-400 fa-solid fa-location-dot"></i> 123 Flavor Street, New Delhi, India
+                    </li>
+                    <li class="text-base capitalize text-gray-300 flex items-center gap-3"><i
+                            class="text-yellow-400 fa-solid fa-phone-volume"></i> +910123456789</li>
+                    <li class="text-base capitalize text-gray-300 flex items-center gap-3"><i
+                            class="text-yellow-400 fa-solid fa-envelope"></i> support@RIM Studio.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="border-t border-gray-500/90 mt-10 pt-8 text-center text-base text-gray-500">
+            <p>&copy; 2025 RIM Studio. All Rights Reserved - Created by <span class="text-yellow-500">Santhosh VS</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Back to top btn -->
+    <button
+        class="btn backToTop fixed bottom-2 right-4 w-12 h-12 bg-yellow-500 rounded-sm text-white text-xl translate-y-[20px] opacity-0 transition duration-500"><i
+            class="fa-solid fa-arrow-turn-up"></i></button>
+
+
+
+
+    <!-- JS file -->
+    <script src="src/main.js"></script>
+
+    <!-- AOS js cdn -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true, // animation plays only once when in view
+        });
+    </script>
+</body>
+
+</html>

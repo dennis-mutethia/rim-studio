@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+:root {
+    --lightPink: #fff7f0;
+    --black: #121212;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+}
+
+.header.scrolled {
+    @apply py-4.5 bg-white shadow-md transition-all duration-500;
+    transition-timing-function: cubic-bezier(0.68, -1.55, 0.27, 1.55);
+}
+
+.header.scrolled .logo,
+.header.scrolled .navlink,
+.header.scrolled .menu-bar {
+    @apply text-black;
+}
+
+.header.scrolled .navlink.active,
+.navlink.active {
+    @apply text-yellow-500;
+}
+
+.header.scrolled .navlink:hover {
+    @apply text-yellow-500;
+}
+
+.mobile-menu.active {
+    @apply right-0;
+}
+
+/* Back to top btn */
+.backToTop.active {
+    @apply translate-y-0 opacity-100;
+}
+
+/* Section classes */
+/* Section Padding */
+.section-padding {
+    @apply py-[30px] sm:py-[40px] md:py-[60px] lg:py-[80px] xl:py-[100px] px-[2rem] md:px-[4rem] lg:px-[6rem];
+}
+
+.section-title {
+    @apply w-full lg:w-[60%] mx-auto text-center mb-16;
+}
+
+.section-heading {
+    @apply text-4xl md:text-5xl font-semibold capitalize mb-4;
+}
+
+.section-description {
+    @apply text-lg font-normal text-gray-500;
+}
+
+/* Footer */
+.footer-padding {
+    @apply py-[30px] sm:py-[40px] md:py-[60px] lg:pt-[80px] lg:pb-[50px] xl:pt-[100px] xl:pb-[50px] px-[30px] sm:px-[40px] md:px-[60px] lg:px-[80px] xl:px-[100px];
+}
+
+.btn {
+    @apply border-none outline-none cursor-pointer inline-block;
+}
+
+.primary-btn {
+    @apply py-2 px-10 bg-yellow-500 text-white rounded-full hover:bg-yellow-600 transition-all duration-500 ease-in-out;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./assets/images/bg.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.tab-btn.active {
+    @apply bg-yellow-500 text-white;
+}
+
+.fadeIn {
+    animation: fadeInEffect 0.5s ease-in-out;
+}
+
+@keyframes fadeInEffect {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
