@@ -11,13 +11,20 @@ load_dotenv()
 
 # Routes
 @app.route('/')
-def index():              
+def index():   
+    error = None  
+    error_message = None  
     if request.method == 'POST':       
-        if request.form['action'] == 'edit':  
-            id = request.form['id']
+        if request.form['action'] == 'send':  
             name = request.form['name'] 
+            phone = request.form['phone']
+            email = request.form['email']
+            message = request.form['message']
+            
+            #send email logic here using the collected data
+            error_message = "Your message has been sent successfully!"  # Set success message
                         
-    return render_template('index.html')
+    return render_template('index.html', error=error, error_message=error_message)
 
 
 if __name__ == '__main__':
