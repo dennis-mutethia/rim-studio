@@ -54,9 +54,9 @@ def index():
             subject = "New Contact Form Submission"
             body = f"Name: {name}\nPhone: {phone}\nEmail: {email}\nMessage: {message}"
             if send_email(sender_email, subject, body):
-                body = "Your message has been sent successfully! We will get back to you shortly."
+                body = "Your message has been received successfully! We will get back to you shortly."
                 send_email(email, "Your Message Has Been Received", body)
-                error_message = "Your message has been received successfully!"  # Set success message
+                error_message = "Your message has been sent successfully!"  # Set success message
             else:
                 error = "Failed to send email."  # Set error message
 
