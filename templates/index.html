@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RIM Records - Taste Beyond Expectations</title>
 
-    <link href="./src/output.css" rel="stylesheet">
+    <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}" type="image/png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='output.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./src/assets/images/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}" type="image/png">
 </head>
 
 <body class="overflow-x-hidden">
@@ -40,9 +41,6 @@
                         <li><a href="#services"
                                 class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500">Services</a>
                         </li>
-                        <!-- <li><a href="#reservation"
-                                class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500">Studio
-                                Booking</a></li> -->
                         <li><a href="#contact"
                                 class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500">Contact</a>
                         </li>
@@ -84,6 +82,13 @@
     </header>
 
     <!-- Hero -->
+    <style>
+        /* Hero */
+        .hero {
+            background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('{{ url_for("static", filename="images/bg.jpg") }}') center center no-repeat;
+            background-size: cover;
+        }
+    </style>
     <main>
         <section
             class="section hero section-padding w-full h-screen bg-[#f9f9f9] flex flex-col justify-center items-center"
@@ -101,7 +106,7 @@
     <section class="section about section-padding bg-[#fff7f0] overflow-x-hidden" id="about">
         <div class="about-content grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div class="w-full h-full hidden sm:block" data-aos="fade-right">
-                <img src="src/assets/images/special1.jpg" alt="RIM Records Studio"
+                <img src="{{ url_for('static', filename='images/special1.jpg') }}" alt="RIM Records Studio"
                     class="w-full h-full object-cover rounded-xl shadow-xl">
             </div>
 
@@ -228,7 +233,8 @@
                     <h3 class="text-xl font-bold mb-2">Rick Mutune – Parte</h3>
                     <p class="text-gray-500 mb-4">Street energy meets premium production. Already turning up clubs
                         across East Africa.</p>
-                    <a href="https://www.youtube.com/watch?v=oxfmvQoMA-U" class="btn text-base font-medium hover:text-yellow-500 transition">Watch Now <i
+                    <a href="https://www.youtube.com/watch?v=oxfmvQoMA-U"
+                        class="btn text-base font-medium hover:text-yellow-500 transition">Watch Now <i
                             class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
@@ -240,7 +246,8 @@
                     <p class="text-sm text-yellow-400 uppercase mb-2 tracking-widest">Gospel</p>
                     <h3 class="text-xl font-bold mb-2">Lily Musicke – Thank You Lord</h3>
                     <p class="text-gray-500 mb-4">Heartfelt gratitude wrapped in beautiful melody and clean visuals.</p>
-                    <a href="https://www.youtube.com/watch?v=Me09EfZfdd8" class="btn text-base font-medium hover:text-yellow-500 transition">Watch Now <i
+                    <a href="https://www.youtube.com/watch?v=Me09EfZfdd8"
+                        class="btn text-base font-medium hover:text-yellow-500 transition">Watch Now <i
                             class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
@@ -253,19 +260,21 @@
                     <h3 class="text-xl font-bold mb-2">Gicho – If I Perish I Perish</h3>
                     <p class="text-gray-500 mb-4">The party anthem of the season. Bold, fun, and unapologetically
                         Kenyan.</p>
-                    <a href="https://www.youtube.com/watch?v=sIs76eZ3Kno" class="btn text-base font-medium hover:text-yellow-500 transition">Watch Now <i
+                    <a href="https://www.youtube.com/watch?v=sIs76eZ3Kno"
+                        class="btn text-base font-medium hover:text-yellow-500 transition">Watch Now <i
                             class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
 
             <div class="card w-full h-auto xl:h-60 flex flex-col xl:flex-row gap-0 xl:gap-5" data-aos="zoom-in"
-                data-aos-delay="300">                
+                data-aos-delay="300">
                 <iframe src="https://www.youtube.com/embed/GVmbql0-n0M"></iframe>
                 <div class="bg-white shadow-lg rounded-lg py-4 px-3 flex flex-col justify-center">
                     <p class="text-sm text-yellow-400 uppercase mb-2 tracking-widest">Gengetone</p>
                     <h3 class="text-xl font-bold mb-2">Gicho - Capital City</h3>
                     <p class="text-gray-500 mb-4">Conscious bars over hard-hitting beats. One take, pure fire.</p>
-                    <a href="https://www.youtube.com/watch?v=GVmbql0-n0M" class="btn text-base font-medium hover:text-yellow-500 transition">Watch Now <i
+                    <a href="https://www.youtube.com/watch?v=GVmbql0-n0M"
+                        class="btn text-base font-medium hover:text-yellow-500 transition">Watch Now <i
                             class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
@@ -319,67 +328,6 @@
         </div>
     </section>
 
-    <!-- Studio Booking -->
-    <!-- <section class="section reservation section-padding bg-[#fff]" id="reservation">
-        <div class="section-title" data-aos="fade-up">
-            <h2 class="section-heading">Book Studio Time</h2>
-            <p class="section-description">Reserve your session at RIM Records. Let's create something timeless
-                together.</p>
-        </div>
-
-        <div class="w-full md:max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-md" data-aos="fade-up">
-            <form class="reservation_form grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                    <label class="block mb-2 text-sm font-medium text-gray-700">Full Name</label>
-                    <input type="text"
-                        class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-                        placeholder="Your Name" required>
-                </div>
-                <div>
-                    <label class="block mb-2 text-sm font-medium text-gray-700">Email</label>
-                    <input type="email"
-                        class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-                        placeholder="you@gmail.com" required>
-                </div>
-                <div>
-                    <label class="block mb-2 text-sm font-medium text-gray-700">Phone Number</label>
-                    <input type="tel"
-                        class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-                        placeholder="+254 712 345 678" required>
-                </div>
-                <div>
-                    <label class="block mb-2 text-sm font-medium text-gray-700">Preferred Date</label>
-                    <input type="date"
-                        class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-                        required>
-                </div>
-                <div>
-                    <label class="block mb-2 text-sm font-medium text-gray-700">Preferred Time</label>
-                    <input type="time"
-                        class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-                        required>
-                </div>
-                <div>
-                    <label class="block mb-2 text-sm font-medium text-gray-700">Number of Artists</label>
-                    <input type="number" min="1" max="10"
-                        class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-                        placeholder="1" required>
-                </div>
-                <div class="md:col-span-2">
-                    <label class="block mb-2 text-sm font-medium text-gray-700">Session Details</label>
-                    <textarea
-                        class="w-full h-40 border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-                        placeholder="Recording, Mixing, Beat Production, Video Shoot, etc."></textarea>
-                </div>
-                <div class="md:col-span-2 text-center">
-                    <button
-                        class="btn bg-yellow-500 hover:bg-yellow-600 transition text-white font-medium px-16 py-3 rounded-full">Book
-                        Now</button>
-                </div>
-            </form>
-        </div>
-    </section> -->
-
     <!-- Testimonials -->
     <section class="testimonials section-padding bg-[var(--lightPink)]" id="testimonials">
         <div class="section-title" data-aos="fade-up">
@@ -391,7 +339,7 @@
             data-aos="fade-up">
             <div class="w-full bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
                 <div class="flex items-center gap-4 mb-6">
-                    <img src="src/assets/images/user1.png" alt="Rick Mutune"
+                    <img src="{{ url_for('static', filename='images/user1.png') }}" alt="Rick Mutune"
                         class="w-20 h-20 object-cover rounded-full">
                     <div>
                         <h3 class="text-lg font-semibold">Rick Mutune</h3>
@@ -404,7 +352,7 @@
 
             <div class="w-full bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
                 <div class="flex items-center gap-4 mb-6">
-                    <img src="src/assets/images/user2.png" alt="Lily Musicke"
+                    <img src="{{ url_for('static', filename='images/user2.png') }}" alt="Lily Musicke"
                         class="w-20 h-20 object-cover rounded-full">
                     <div>
                         <h3 class="text-lg font-semibold">Lily Musicke</h3>
@@ -417,7 +365,8 @@
 
             <div class="w-full bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
                 <div class="flex items-center gap-4 mb-6">
-                    <img src="src/assets/images/user3.png" alt="Gicho" class="w-20 h-20 object-cover rounded-full">
+                    <img src="{{ url_for('static', filename='images/user3.png') }}" alt="Gicho"
+                        class="w-20 h-20 object-cover rounded-full">
                     <div>
                         <h3 class="text-lg font-semibold">Gicho</h3>
                         <small class="text-sm text-gray-500">Urban Rhumba Artist</small>
@@ -447,11 +396,13 @@
                     </div>
                     <div class="flex items-center gap-4">
                         <i class="fa-solid fa-phone-volume"></i>
-                        <a href="tel:+254700300250" class="text-yellow-500 hover:underline">0700 300 250</a> <span class="text-gray-500">(Calls & WhatsApp)</span>
+                        <a href="tel:+254700300250" class="text-yellow-500 hover:underline">0700 300 250</a> <span
+                            class="text-gray-500">(Calls & WhatsApp)</span>
                     </div>
                     <div class="flex items-center gap-4">
                         <i class="fa-solid fa-envelope"></i>
-                        <a href="mailto:info@rimrecords.co.ke" class="text-yellow-500 hover:underline">info@rimrecords.co.ke</a>
+                        <a href="mailto:info@rimrecords.co.ke"
+                            class="text-yellow-500 hover:underline">info@rimrecords.co.ke</a>
                     </div>
                 </div>
             </div>
@@ -465,7 +416,7 @@
                             placeholder="Enter your name" required>
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Phone  Number</label>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
                         <input type="tel"
                             class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
                             placeholder="Enter your phone number" required>
@@ -523,7 +474,7 @@
         class="btn backToTop fixed bottom-2 right-4 w-12 h-12 bg-yellow-500 rounded-sm text-white text-xl translate-y-[20px] opacity-0 transition"><i
             class="fa-solid fa-arrow-turn-up"></i></button>
 
-    <script src="src/main.js"></script>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 1000, once: true });
