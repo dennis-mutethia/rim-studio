@@ -31,18 +31,18 @@
                         <li><a href="#home"
                                 class="navlink text-white active hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500">Home</a>
                         </li>
+                        <li><a href="#about"
+                                class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500">About</a>
+                        </li>
                         <li><a href="#videos"
                                 class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500">Videos</a>
                         </li>
                         <li><a href="#services"
                                 class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500">Services</a>
                         </li>
-                        <li><a href="#reservation"
+                        <!-- <li><a href="#reservation"
                                 class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500">Studio
-                                Booking</a></li>
-                        <li><a href="#about"
-                                class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500">About</a>
-                        </li>
+                                Booking</a></li> -->
                         <li><a href="#contact"
                                 class="navlink text-white hover:text-yellow-500 text-base font-normal capitalize transition-all duration-500">Contact</a>
                         </li>
@@ -96,6 +96,28 @@
             </div>
         </section>
     </main>
+
+    <!-- About Section -->
+    <section class="section about section-padding bg-[#fff7f0] overflow-x-hidden" id="about">
+        <div class="about-content grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <div class="w-full h-full hidden sm:block" data-aos="fade-right">
+                <img src="src/assets/images/special1.jpg" alt="RIM Records Studio"
+                    class="w-full h-full object-cover rounded-xl shadow-xl">
+            </div>
+
+            <div class="w-full lg:max-w-2xl mx-auto" data-aos="fade-left">
+                <small class="inline-block text-sm uppercase tracking-widest text-yellow-500 mb-3">Our Story</small>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-800 capitalize leading-[1.1]">Where Sound
+                    Becomes Legacy</h2>
+                <p class="text-gray-600 text-lg mb-6">At <span class="font-semibold text-black">RIM Records</span>, we
+                    sculpt sound into timeless art. Based in Nairobi, we fuse authentic Kenyan rhythms with world-class
+                    production to help artists create music that travels far beyond borders.</p>
+                <p class="text-gray-600 text-lg mb-6">Whether it's reggae roots, soulful RnB, high-energy Gengetone or
+                    smooth rhumba — every project is treated with passion, precision, and purpose.</p>
+                <a href="#videos" class="btn primary-btn">Explore Our Work</a>
+            </div>
+        </div>
+    </section>
 
     <!-- Music Videos Section -->
     <section class="section menu section-padding bg-[var(--lightPink)]" id="videos">
@@ -167,8 +189,7 @@
 
             <!-- 5 - New Artist -->
             <div class="menu-card bg-white rounded-xl shadow-lg overflow-hidden group transition" data-category="lunch">
-                <img src="src/assets/images/menu5.jpg" alt="New Release"
-                    class="w-full h-60 object-cover group-hover:scale-105 transition duration-500">
+                <iframe width="100%" src="https://www.youtube.com/embed/sIs76eZ3Kno"></iframe>
                 <div class="p-6">
                     <h3 class="text-xl font-semibold capitalize">Nia Soul - Midnight Confessions</h3>
                     <p class="text-sm text-yellow-400 uppercase mb-2">Official Video</p>
@@ -180,8 +201,7 @@
             <!-- 6 - New Artist -->
             <div class="menu-card bg-white rounded-xl shadow-lg overflow-hidden group transition"
                 data-category="dinner">
-                <img src="src/assets/images/menu6.jpg" alt="New Release"
-                    class="w-full h-60 object-cover group-hover:scale-105 transition duration-500">
+                <iframe width="100%" src="https://www.youtube.com/embed/sIs76eZ3Kno"></iframe>
                 <div class="p-6">
                     <h3 class="text-xl font-semibold capitalize">Kush Vibes - Fire In The Booth</h3>
                     <p class="text-sm text-red-400 uppercase mb-2">Live Session</p>
@@ -252,28 +272,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="section about section-padding bg-[#fff7f0] overflow-x-hidden" id="about">
-        <div class="about-content grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            <div class="w-full h-full hidden sm:block" data-aos="fade-right">
-                <img src="src/assets/images/special1.jpg" alt="RIM Records Studio"
-                    class="w-full h-full object-cover rounded-xl shadow-xl">
-            </div>
-
-            <div class="w-full lg:max-w-2xl mx-auto" data-aos="fade-left">
-                <small class="inline-block text-sm uppercase tracking-widest text-yellow-500 mb-3">Our Story</small>
-                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-800 capitalize leading-[1.1]">Where Sound
-                    Becomes Legacy</h2>
-                <p class="text-gray-600 text-lg mb-6">At <span class="font-semibold text-black">RIM Records</span>, we
-                    sculpt sound into timeless art. Based in Nairobi, we fuse authentic Kenyan rhythms with world-class
-                    production to help artists create music that travels far beyond borders.</p>
-                <p class="text-gray-600 text-lg mb-6">Whether it's reggae roots, soulful RnB, high-energy Gengetone or
-                    smooth rhumba — every project is treated with passion, precision, and purpose.</p>
-                <a href="#videos" class="btn primary-btn">Explore Our Work</a>
-            </div>
-        </div>
-    </section>
-
     <!-- Services -->
     <section class="section services section-padding" id="services">
         <div class="section-title" data-aos="fade-up">
@@ -322,7 +320,7 @@
     </section>
 
     <!-- Studio Booking -->
-    <section class="section reservation section-padding bg-[#fff]" id="reservation">
+    <!-- <section class="section reservation section-padding bg-[#fff]" id="reservation">
         <div class="section-title" data-aos="fade-up">
             <h2 class="section-heading">Book Studio Time</h2>
             <p class="section-description">Reserve your session at RIM Records. Let's create something timeless
@@ -380,7 +378,7 @@
                 </div>
             </form>
         </div>
-    </section>
+    </section> -->
 
     <!-- Testimonials -->
     <section class="testimonials section-padding bg-[var(--lightPink)]" id="testimonials">
@@ -445,15 +443,15 @@
                 <div class="space-y-4 text-gray-700">
                     <div class="flex items-center gap-4">
                         <i class="fa-solid fa-location-dot"></i>
-                        <p>Nairobi, Kenya (Exact address given after booking confirmation)</p>
+                        <p>Kasarani, Nairobi, Kenya (Jopa House 4th Floor - Next to Sky Towers)</p>
                     </div>
                     <div class="flex items-center gap-4">
                         <i class="fa-solid fa-phone-volume"></i>
-                        <p>0700 300 250 (Calls & WhatsApp)</p>
+                        <a href="tel:+254700300250" class="text-yellow-500 hover:underline">0700 300 250</a> <span class="text-gray-500">(Calls & WhatsApp)</span>
                     </div>
                     <div class="flex items-center gap-4">
                         <i class="fa-solid fa-envelope"></i>
-                        <p>info@rimrecords.co.ke</p>
+                        <a href="mailto:info@rimrecords.co.ke" class="text-yellow-500 hover:underline">info@rimrecords.co.ke</a>
                     </div>
                 </div>
             </div>
@@ -465,6 +463,12 @@
                         <input type="text"
                             class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
                             placeholder="Enter your name" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Phone  Number</label>
+                        <input type="tel"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                            placeholder="Enter your phone number" required>
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
@@ -494,15 +498,18 @@
                 <p class="text-gray-300 mb-4">Nairobi-based music production house turning visions into legendary sound.
                 </p>
                 <div class="flex gap-4">
-                    <a href="#"
+                    <a href="https://www.instagram.com/rimlimitedke/" target="_blank"
                         class="w-10 h-10 bg-gray-200/90 flex items-center justify-center text-yellow-500 rounded hover:bg-yellow-500 hover:text-white transition"><i
                             class="fa-brands fa-instagram"></i></a>
-                    <a href="#"
+                    <a href="https://www.youtube.com/@RIMLimited" target="_blank"
                         class="w-10 h-10 bg-gray-200/90 flex items-center justify-center text-yellow-500 rounded hover:bg-yellow-500 hover:text-white transition"><i
                             class="fa-brands fa-youtube"></i></a>
-                    <a href="#"
+                    <a href="https://www.tiktok.com/@rimproductionlimited" target="_blank"
                         class="w-10 h-10 bg-gray-200/90 flex items-center justify-center text-yellow-500 rounded hover:bg-yellow-500 hover:text-white transition"><i
                             class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com/rimrecords" target="_blank"
+                        class="w-10 h-10 bg-gray-200/90 flex items-center justify-center text-yellow-500 rounded hover:bg-yellow-500 hover:text-white transition"><i
+                            class="fa-brands fa-facebook"></i></a>
                 </div>
             </div>
         </div>
